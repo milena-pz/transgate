@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:padding="16dp">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTituloEditar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/editar_usuario"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorDefault"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp" />
+
+    <!-- CardView para el formulario -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardFormularioEditar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloEditar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Campo de Nombre Completo -->
+            <EditText
+                android:id="@+id/etNombreEditar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="@string/nombre_completoEDitar"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:layout_marginBottom="16dp"
+                tools:ignore="VisualLintTextFieldSize" />
+
+            <!-- Campo de Teléfono -->
+            <EditText
+                android:id="@+id/etTelefonoEditar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tel_fonoEdiatar"
+                android:inputType="phone"
+                android:minHeight="48dp"
+                android:layout_marginBottom="16dp"
+                tools:ignore="VisualLintTextFieldSize" />
+
+            <!-- Campo de Tipo de Usuario -->
+            <Spinner
+                android:id="@+id/spinnerTipoUsuarioEditar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Campo de Empresa o Autónomo -->
+            <EditText
+                android:id="@+id/etNombreEmpresaEditar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nombre_empresa_o_aut_nomoEd"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:layout_marginBottom="16dp"
+                tools:ignore="VisualLintTextFieldSize" />
+
+            <!-- Campo de Fecha Alta (se toca y abre calendario) -->
+            <TextView
+                android:id="@+id/tvFechaAltaEditar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fecha_de_altaED"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:background="@drawable/bg_field"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Campo de Fecha Baja (se toca y abre calendario) -->
+            <TextView
+                android:id="@+id/tvFechaBajaEditar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fecha_de_bajaEd"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:background="@drawable/bg_field"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp" />
+
+            <CheckBox
+                android:id="@+id/checkSinFechaBaja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:minHeight="48dp"
+                android:text="@string/sin_fecha_de_bajaEd"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvFechaBajaEditar" />
+            <!-- Estado del usuario -->
+            <TextView
+                android:id="@+id/tvEstadoEditar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/estadoEd"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:background="@drawable/bg_field"
+                android:padding="12dp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Botón Guardar -->
+    <Button
+        android:id="@+id/btnGuardarEditar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/colorButton"
+        android:text="@string/guardarEd"
+        android:textColor="#212121"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCancelarEditar"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="VisualLintButtonSize" />
+
+    <!-- Botón Cancelar -->
+    <Button
+        android:id="@+id/btnCancelarEditar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@color/colorButton"
+        android:text="@string/cancelarEd"
+        android:textColor="#212121"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btnGuardarEditar"
+        tools:ignore="VisualLintButtonSize" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

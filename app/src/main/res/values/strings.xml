@@ -1,0 +1,140 @@
+<resources>
+    <string name="app_name">TransGate</string>
+    <string name="bienvenido_a_transdoor">Bienvenido a Transdoor</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="acceder">Acceder</string>
+    <string name="logo_de_la_empresa">Logo de la empresa</string>
+    <string name="nombre">Nombre</string>
+    <string name="telefono">Teléfono</string>
+    <string name="tipo">Tipo</string>
+    <string name="titulo_lista_usuarios">Lista de Usuarios Registrados</string>
+    <string name="descripcion_logout">Cerrar sesión</string>
+    <string name="descripcion_salir">Salir de la aplicación</string>
+    <string name="descripcion_insertar">Añadir usuario</string>
+    <string name="fecha_de_alta_hoy">Fecha de Alta: Hoy</string>
+    <string name="estado_activo">Estado: Activo</string>
+    <string name="guardar">Guardar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="nombre_empresa_o_aut_nomo">Nombre Empresa o Autónomo</string>
+
+    <string name="usuario_insertado_exitoso">Usuario insertado con éxito</string>
+    <string name="error_insertar_usuario">Error al insertar el usuario</string>
+    <string name="tel_fono">Teléfono</string>
+    <string name="nombre_completo">Nombre Completo</string>
+
+    <!-- Alta Usuario -->
+    <string name="sms_alta">SMS ALTA</string>
+    <string name="usuario">Nombre:</string>
+    <string name="tel_fonoDeUsuario">Teléfono:</string>
+    <string name="mensaje_de_alta">Mensaje de Alta</string>
+    <string name="enviar_sms_alta">Enviar SMS Alta</string>
+    <string name="fecha_alta_label">Fecha de Alta: %1$s</string>
+
+    <string name="error_nombre_obligatorio">El nombre completo es obligatorio.</string>
+    <string name="error_telefono_invalido">El teléfono debe tener 9 cifras.</string>
+    <string name="error_empresa_obligatoria">El nombre de empresa es obligatorio para Empresas.</string>
+    <string name="usuario_insertado">✅ Usuario insertado con éxito</string>
+    <string name="error_generico">❌ Error: %1$s</string>
+
+
+
+    <!-- Baja Usuario -->
+    <string name="sms_baja">Dar de Baja Usuario</string>
+    <string name="mensaje_de_baja">2003 RU.RU teléfono</string>
+    <string name="enviar_sms_baja">Enviar SMS de Baja</string>
+
+
+
+    <string name="titulo_sms_baja">Dar de Baja Usuario</string>
+    <string name="label_usuario">Usuario:</string>
+    <string name="label_telefono">Teléfono:</string>
+    <string name="mensaje_sms_baja">Mensaje de Baja</string>
+    <string name="btn_enviar_sms_baja">Enviar SMS de Baja</string>
+    <string name="dar_de_baja_usuario">Dar de Baja Usuario</string>
+    <string name="usuariodebaja">Usuario:</string>
+    <string name="tel_fonoBaja">Teléfono:</string>
+    <string name="mensaje_de_bajaN">Mensaje de Baja</string>
+    <string name="enviar_sms_de_baja">Enviar SMS de Baja</string>
+
+    <string name="label_nombre">Nombre: %1$s</string>
+    <string name="label_tipo">Tipo: %1$s</string>
+    <string name="label_empresa">Empresa/Autónomo: %1$s</string>
+    <string name="label_fecha_alta">Fecha de Alta: %1$s</string>
+    <string name="label_fecha_baja">Fecha de Baja: %1$s</string>
+    <string name="label_estado">Estado: %1$s</string>
+    <string name="label_id">ID: %1$d</string>
+    <string name="id_baja">ID: %1$s</string>
+    <string name="nombre_baja">Nombre: %1$s</string>
+    <string name="tel_fono_Bja">Teléfono: %1$s</string>
+    <string name="tipo_baja">Tipo: %1$s</string>
+    <string name="empresa_aut_nomoBaja">Empresa/Autónomo: %1$s</string>
+    <string name="fecha_de_altaBaja">Fecha de Alta: %1$s</string>
+    <string name="estadoBaja">Estado: %1$s</string>
+    <string name="fecha_de_bajaB">Fecha de Baja: %1$s</string>
+    <string name="fecha_de_bajaEditar">Fecha de Baja: %1$s</string>
+    <string name="estado_bajaEditar">Estado: Baja</string>
+    <string name="fecha_de_altaEditar">Fecha de Alta: %1$s</string>
+    <string name="fecha_de_altaE">Fecha de Alta: %1$s</string>
+    <string name="estadoEditar">Estado: %1$s</string>
+    <string name="nombreSMS">Nombre: %1$s</string>
+    <string name="tel_fonoSMs">Teléfono: %1$s</string>
+    <string name="nombreSBaja">Nombre: %1$s</string>
+    <string name="tel_fonoSmB">Teléfono: %1$s</string>
+    <string name="id_ver">ID: %1$s</string>
+    <string name="nombreVer">Nombre: %1$s</string>
+    <string name="tel_fonoVer">Teléfono: %1$s</string>
+    <string name="tipoVer">Tipo: %1$s</string>
+    <string name="empresa_aut_nomoVer">Empresa/Autónomo: %1$s</string>
+    <string name="fecha_de_altaVer">Fecha de Alta: %1$s</string>
+    <string name="fecha_de_bajaVer">Fecha de Baja: %1$s</string>
+    <string name="estadoVer">Estado: %1$s</string>
+    <string name="buscar_por_tel_fono">Buscar por teléfono</string>
+    <string name="buscar_por_nombre">buscarpor nombre</string>
+    <string name="volver">Volver</string>
+    <string name="baja">Confirmacion de Baja</string>
+    <string name="id">ID:</string>
+    <string name="nombreDebaja">Nombre:</string>
+    <string name="tel_fonob">Teléfono:</string>
+    <string name="tipobb">Tipo:</string>
+    <string name="empresa_aut_nomob">Empresa/Autónomo:</string>
+    <string name="fecha_de_altab">Fecha de Alta:</string>
+    <string name="estadob">Estado:</string>
+    <string name="fecha_de_bajab">Fecha de Baja:</string>
+    <string name="confirmar_baja">¿Confirmar Baja?</string>
+    <string name="cancelarVentanabaja">Cancelar</string>
+    <string name="necesitas_ayuda">¿Necesitas ayuda? 💬</string>
+    <string name="icono">icono</string>
+    <string name="contrase_a">contraseña</string>
+    <string name="ocultar">ocultar</string>
+    <string name="contenedor_de_formulario_de_inicio_de_sesi_n">Contenedor de formulario de inicio de sesión</string>
+    <string name="transbot_tu_ia_de_ayuda">🤖 TransBot - Tu IA de ayuda</string>
+    <string name="salirBot">Salir</string>
+    <string name="escribe_tu_pregunta">Escribe tu pregunta...</string>
+    <string name="enviarBot">Enviar</string>
+    <string name="foto">foto</string>
+    <string name="editar_usuario">Editar Usuario</string>
+    <string name="nombre_completoEDitar">Nombre Completo</string>
+    <string name="tel_fonoEdiatar">Teléfono</string>
+    <string name="nombre_empresa_o_aut_nomoEd">Nombre Empresa o Autónomo</string>
+    <string name="fecha_de_altaED">Fecha de Alta</string>
+    <string name="fecha_de_bajaEd">Fecha de Baja</string>
+    <string name="sin_fecha_de_bajaEd">Sin fecha de baja</string>
+    <string name="estadoEd">Estado</string>
+    <string name="guardarEd">Guardar</string>
+    <string name="cancelarEd">Cancelar</string>
+    <string name="tipoDeusuarioB">Tipo: %1$s</string>
+    <string name="idver">ID:</string>
+    <string name="nombrever">Nombre:</string>
+    <string name="tel_fonoVe">Teléfono:</string>
+    <string name="tipoVe">Tipo:</string>
+    <string name="empresa_aut_nomoV">Empresa/Autónomo:</string>
+    <string name="fecha_de_altaV">Fecha de Alta:</string>
+    <string name="fecha_de_bajaV">Fecha de Baja:</string>
+    <string name="estadoV">Estado:</string>
+    <string name="bajaVer">📴 Baja</string>
+    <string name="cancelarVer">↩️ Cancelar</string>
+    <string name="editarVer">✏️ Editar</string>
+    <string name="detalles_del_usuario">Detalles del Usuario</string>
+
+</resources>

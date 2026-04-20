@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:padding="24dp">
+
+    <!-- Título fuera de la tarjeta -->
+    <TextView
+        android:id="@+id/tvTituloSMSBaja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dar_de_baja_usuario"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- CardView blanca para el contenido -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardFormularioBaja"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloSMSBaja"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+            <!-- Nombre del usuario -->
+            <TextView
+                android:id="@+id/tvNombreBaja"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/usuariodebaja"
+                android:textColor="#212121"
+                android:textSize="18sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Teléfono del usuario -->
+            <TextView
+                android:id="@+id/tvTelefonoBaja"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/tel_fonoBaja"
+                android:textColor="#212121"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/tvNombreBaja"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+            <!-- Tipo Usuario -->
+            <TextView
+                android:id="@+id/tvTipoUsuarioSMS"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/tipoDeusuarioB"
+                android:textSize="16sp"
+                android:textColor="#212121"
+                android:layout_marginTop="12dp"
+                app:layout_constraintTop_toBottomOf="@id/tvTelefonoBaja"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+            <!-- Mensaje que se va a enviar por SMS -->
+            <TextView
+                android:id="@+id/tvMensajeSMSBaja"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/mensaje_de_bajaN"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                app:layout_constraintTop_toBottomOf="@id/tvTipoUsuarioSMS"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+               />
+
+            <!-- Botón para enviar el SMS de baja -->
+            <Button
+                android:id="@+id/btnEnviarSMSBaja"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp"
+                android:backgroundTint="@color/colorButton"
+                android:text="@string/enviar_sms_de_baja"
+                android:textColor="#212121"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTipoUsuarioSMS"
+                app:layout_constraintWidth_max="300dp" />
+
+
+
+            <!-- Botón para cancelar y volver a la pantalla anterior -->
+            <Button
+                android:id="@+id/btnCancelarSMSBaja"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/colorButton"
+                android:text="@string/volver"
+                android:textColor="#212121"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnEnviarSMSBaja"
+                app:layout_constraintWidth_max="300dp" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

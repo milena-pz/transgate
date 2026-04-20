@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema personalizado basado en AppCompat -->
+    <style name="Theme.TransGate" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Colores principales -->
+        <item name="colorPrimary">#1C1C6D</item>
+        <item name="colorPrimaryDark">#121257</item>
+        <item name="colorAccent">#F7931E</item>
+
+    </style>
+</resources>

@@ -1,0 +1,132 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    tools:context=".ui.control.ListaUsuariosActivity">
+
+    <!-- Título de la actividad -->
+     <TextView
+         android:id="@+id/tvTitulo"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/titulo_lista_usuarios"
+         android:textSize="26sp"
+         android:textStyle="bold"
+         android:textColor="@color/colorDefault"
+         android:layout_marginTop="18dp"
+         app:layout_constraintTop_toTopOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Filtros de búsqueda: Nombre y Teléfono -->
+
+    <LinearLayout
+        android:id="@+id/layoutFiltros"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitulo"
+        android:padding="8dp">
+
+        <!-- Filtro por Nombre -->
+        <EditText
+            android:id="@+id/etFiltroNombre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:autofillHints="name"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/buscar_por_nombre"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:layout_weight="1"
+            tools:ignore="VisualLintTextFieldSize" />
+
+        <!-- Filtro por Teléfono -->
+        <EditText
+            android:id="@+id/etFiltroTelefono"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="phone"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/buscar_por_tel_fono"
+            android:inputType="phone"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:layout_weight="1"
+            tools:ignore="VisualLintTextFieldSize" />
+    </LinearLayout>
+
+
+
+    <!-- RecyclerView para mostrar la lista de usuarios -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewUsuarios"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/layoutFiltros"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayoutBotones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="NotSibling,SpeakableTextPresentCheck" />
+
+
+    <!-- Botones flotantes para las acciones -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutBotones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Insertar (Izquierda) -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButtonInsertar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:backgroundTint="@color/colorButton"
+            android:contentDescription="@string/descripcion_insertar"
+            android:src="@drawable/ic_add1"
+            android:tint="@color/colorButtonText"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/floatingActionButtonLogout"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="ImageContrastCheck" />
+
+        <!-- Logout (Centro) -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButtonLogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/descripcion_logout"
+            android:src="@drawable/ic_logout"
+            android:layout_margin="16dp"
+            android:backgroundTint="@color/colorButton"
+            android:tint="@color/colorButtonText"
+            app:layout_constraintStart_toEndOf="@id/floatingActionButtonInsertar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/floatingActionButtonSalir" />
+
+        <!-- Salir (Derecha) -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButtonSalir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/descripcion_salir"
+            android:src="@drawable/ic_exit"
+            android:layout_margin="16dp"
+            android:backgroundTint="@color/colorButton"
+            android:tint="@color/colorButtonText"
+            app:layout_constraintStart_toEndOf="@id/floatingActionButtonLogout"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

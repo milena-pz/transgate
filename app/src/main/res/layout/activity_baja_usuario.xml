@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:padding="24dp">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/tvTituloBaja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/baja"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- CardView con los datos del usuario -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardDatosBaja"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@android:color/white"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloBaja"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+            <!-- ID Usuario -->
+            <TextView
+                android:id="@+id/tvIdUsuarioBaja"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/id"
+                android:textSize="18sp"
+                android:textColor="#212121"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Nombre -->
+            <TextView
+                android:id="@+id/tvNombreBaja"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/nombreDebaja"
+                android:textSize="18sp"
+                android:textColor="#212121"
+                android:layout_marginTop="12dp"
+                app:layout_constraintTop_toBottomOf="@id/tvIdUsuarioBaja"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Teléfono -->
+            <TextView
+                android:id="@+id/tvTelefonoBaja"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/tel_fonob"
+                android:textSize="18sp"
+                android:textColor="#212121"
+                android:layout_marginTop="12dp"
+                app:layout_constraintTop_toBottomOf="@id/tvNombreBaja"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Tipo Usuario -->
+            <TextView
+                android:id="@+id/tvTipoUsuarioBaja"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/tipobb"
+                android:textSize="18sp"
+                android:textColor="#212121"
+                android:layout_marginTop="12dp"
+                app:layout_constraintTop_toBottomOf="@id/tvTelefonoBaja"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Empresa/Autónomo -->
+            <TextView
+                android:id="@+id/tvEmpresaBaja"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/empresa_aut_nomob"
+                android:textSize="18sp"
+                android:textColor="#212121"
+                android:layout_marginTop="12dp"
+                app:layout_constraintTop_toBottomOf="@id/tvTipoUsuarioBaja"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Fecha Alta -->
+            <TextView
+                android:id="@+id/tvFechaAltaBaja"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/fecha_de_altab"
+                android:textSize="18sp"
+                android:textColor="#212121"
+                android:layout_marginTop="12dp"
+                app:layout_constraintTop_toBottomOf="@id/tvEmpresaBaja"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- Estado -->
+            <TextView
+                android:id="@+id/tvEstadoBaja"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/estadob"
+                android:textSize="18sp"
+                android:textColor="#212121"
+                android:layout_marginTop="12dp"
+                app:layout_constraintTop_toBottomOf="@id/tvFechaAltaBaja"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <!-- 🔥 Nueva línea: Fecha Baja -->
+            <TextView
+                android:id="@+id/tvFechaBaja"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/fecha_de_bajab"
+                android:textSize="18sp"
+                android:textColor="#212121"
+                android:layout_marginTop="12dp"
+                app:layout_constraintTop_toBottomOf="@id/tvEstadoBaja"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Botón de confirmar baja -->
+    <Button
+        android:id="@+id/btnConfirmarBaja"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/confirmar_baja"
+        android:backgroundTint="@color/colorButton"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="24dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:layout_marginHorizontal="8dp"
+        android:padding="12dp"
+        android:textAllCaps="true"
+        app:layout_constraintTop_toBottomOf="@id/cardDatosBaja"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="VisualLintButtonSize" />
+
+    <!-- Botón de cancelar -->
+    <Button
+        android:id="@+id/btnCancelarBaja"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/colorButton"
+        android:maxWidth="320dp"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:text="@string/cancelarVentanabaja"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnConfirmarBaja"
+        tools:ignore="VisualLintButtonSize,TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
